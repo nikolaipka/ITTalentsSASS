@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/font-awesome/css/font-awesome.css">
+		
+	<script>
+	function initMap() {
+		var mapOptions = {
+				center: {lat: 42.664409, lng: 23.287770},
+				zoom: 17,
+                scrollwheel: false,
+                styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]
+    	};
+		var mapElement = document.getElementById('map');
+		var map = new google.maps.Map(mapElement, mapOptions);
+	}	
+		
+
+	</script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_glqXm4wxVNKNrIz8fHqt7VFqTEXYEU8&callback=initMap"
+    async defer></script>
+ <script type="text/javascript" src="assets/js/js.js"></script>   
+</head>
+<body>
+	<header>
+        <h1>Movies</h1>
+        <div class="headerMenu">
+            <ul>
+                <li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Most Popular</a></li>
+				<li><a href="#">News</a></li>
+				<li><a href="#">Contacts</a></li>
+                <li><img src="assets/images/search-icon.png" width="30em"></li>
+            </ul>
+        </div>
+    </header>
+    <nav id="nav">
+        <ul>
+            <li><a href="#">Cinema movies</a></li>
+            <li><a href="#">Tv series</a></li>
+            <li><a href="#">Cartoons</a></li>
+            <li><a href="#">Anime</a></li>
+            <li><a href="#">New movies</a></li>
+            <li><a href="#">HD movies</a></li>
+        </ul>
+    </nav>
+    <section id="slide">
+        <div id="info">
+    		<h1>Ex machina</h1>
+            <p>"To erase the line between man and machine is to obscure the line between man and gods."</p>
+            <ul>
+                <li><a href="http://www.imdb.com/title/tt0470752/?ref_=nv_sr_1" target="blank">Learn more</a></li>
+                <li><a href="https://www.youtube.com/watch?v=EoQuVnKhxaM" target="blank">Watch trailer</a></li>
+            </ul>
+        </div>
+			<img id="container" src="assets/images/EXM.jpg" alt="1">
+	            <ul id="preview">
+	                <li id="li1" class="li1">
+	                    <img src="assets/images/madmax.jpg">
+	                </li>
+	                <li id="li2" class="li2">
+	                    <img src="assets/images/sb.jpg">
+	                </li>
+	                <li id="li3" class="li3">
+	                    <img src="assets/images/wolf.jpg">
+	                </li>
+	                <li id="li4" class="li4">
+	                    <img src="assets/images/wow.jpg">
+	                </li>
+	            </ul> 
+    </section>
+        <section id="select">
+        <h1>Watch your favourite movies online</h1>
+        <p>We are glad you're here! On JustWatch you can easily find out where to watch your favorite movies and TV 
+           shows in the United States. JustWatch is easy and effective: Choose your favorite streaming providers and 
+           see what’s new on Netflix and Co. Filter by genre and release year to find the perfect movie to stream tonight. 
+           Search for a specific movie or TV show to find out where to watch it legally online.
+        </p>
+        <form method="post" action="">
+            <div>
+                <input type="radio" class="genre"><label>Action</label>
+                <br>
+                <input type="radio" class="genre"><label>Adventure</label>
+                <br>
+                <input type="radio" class="genre"><label>Animation</label>
+                <br>
+                <input type="radio" class="genre"><label>Biography</label>
+                <br>
+                <input type="radio" class="genre"><label>Comedy</label>
+                <br>
+                <input type="radio" class="genre"><label>Crime</label>
+                <br>
+                <input type="radio" class="genre"><label>Documentary</label>
+            </div>
+            <div>
+                <input type="radio" class="genre"><label>Drama</label>
+                <br>
+                <input type="radio" class="genre"><label>Family</label>
+                <br>
+                <input type="radio" class="genre"><label>Fantasy</label>
+                <br>
+                <input type="radio" class="genre"><label>game-show</label>
+                <br>
+                <input type="radio" class="genre"><label>History</label>
+                <br>
+                <input type="radio" class="genre"><label>Horror</label>
+                <br>
+                <input type="radio" class="genre"><label>Kids</label>
+            </div>
+            <div>                          
+                <input type="radio" class="genre"><label>Music</label>
+                <br>
+                <input type="radio" class="genre"><label>Musical</label>
+                <br>
+                <input type="radio" class="genre"><label>Mystery</label>
+                <br>
+                <input type="radio" class="genre"><label>News</label>
+                <br>
+                <input type="radio" class="genre"><label>Romance</label>
+                <br>
+                <input type="radio" class="genre"><label>Sci-Fi</label>
+                <br>
+                <input type="radio" class="genre"><label>Short</label>
+            </div>
+            <div>                 
+                <input type="radio" class="genre"><label>Sport</label>
+                <br>
+                <input type="radio" class="genre"><label>Thriller</label>
+                <br>
+                <input type="radio" class="genre"><label>War</label>
+                <br>
+                <input type="radio" class="genre"><label>Western</label>
+            </div>
+            <input id="btn" type="submit" value="Search">
+        </form>
+    </section>
+    <section id="gallery">
+        <h1>More movies</h1>
+        <div>
+            <a href="#"><img src="assets/images/dd.jpg" alt="1"></a>              
+            <p>Donnie Darko</p>
+            <span>2001</span>
+        </div>
+        <div class="galleryPhoto">
+            <a href="#"><img src="assets/images/sq2.jpg" alt="2"></a>                
+            <p>Suicide Squad</p>
+            <span>2016</span>
+        </div>
+        <div class="galleryPhoto">
+            <a href="#"><img src="assets/images/shame.jpg" alt="3"></a>                
+            <p>Shameless US</p>
+            <span>2011-</span>
+        </div>
+        <div class="galleryPhoto">
+            <a href="#"><img src="assets/images/RE.jpg" alt="4"></a>                
+            <p>Resident Evil: The Final Chapter</p>
+            <span>2016</span>
+        </div>
+        <div class="galleryPhoto">
+            <a href="#"><img src="assets/images/LC.jpg" alt="5"></a>               
+            <p>Marver: Luke Cage</p>
+            <span>2016</span>
+        </div>
+        <div class="galleryPhoto">
+            <a href="#"><img src="assets/images/GC.jpg" alt="6"></a>              
+            <p>Game Of Thrones</p>
+            <span>2011-</span>
+        </div>
+        <div class="galleryPhoto">
+            <a href="#"><img src="assets/images/Codes.jpg" alt="7"></a>                
+            <p>The Imitation Game</p>
+            <span>2014</span>
+        </div>
+        <div class="galleryPhoto">
+            <a href="#"><img src="assets/images/BB.jpg" alt="8"></a>               
+            <p>Breaking Bad</p>
+            <span>2008-2013</span>
+        </div>
+        <div class="galleryPhoto">
+            <a href="#"><img src="assets/images/fc.jpg" alt="9"></a>               
+            <p>Fight Club</p>
+            <span>1999</span>
+        </div>
+        <div class="galleryPhoto">
+            <a href="#"><img src="assets/images/asabove.jpg" alt="10"></a>               
+            <p>As Above So Below</p>
+            <span>2014</span>
+        </div>
+        <div class="galleryPhoto">
+            <a href="#"><img src="assets/images/ben.jpg" alt="11"></a>               
+            <p>Ben Hur</p>
+            <span>2016</span>
+        </div>
+        <div class="galleryPhoto">
+            <a href="#"><img src="assets/images/pb.jpg" alt="12"></a>               
+            <p>Prison Break</p>
+            <span>2017</span>
+        </div>
+        <input id="btn" type="submit" value="View More">
+	</section>
+	<section id="comment">
+        <h1>Testimonials</h1>
+        <div>
+            <span id="arrow" class="fa fa-chevron-left"></span>
+            <img id="avatar" src="assets/images/comment.jpg" alt="avatar">
+            <span id="arrow" class="fa fa-chevron-right"></span>
+            <span class="name">James B.</span>
+            <span class="title">Movie fan</span>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi cupiditate
+                dicta distinctio dolorem enim esse et expedita illum laborum maiores minus molestiae neque nisi.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+            </p>
+        </div>
+    </section>
+    <section id="contacts">
+    	<h1>Mail Us</h1>
+        <form method="post" action="#">
+            <div>
+                <label>Your Name<input type="text"></label>             
+                <label for="mail">Your Email<input type="email"></label>                           
+                <textarea></textarea>
+                <label>Your Message</label>
+            </div>
+            <button id="btn">Send</button>
+        </form>
+    </section>
+    <div id="map"></div> 
+    <div id="footer">
+		<footer>
+			<p id="p-left">Movies © 2015 Privacy Policy</p>
+			<p id="p-middle">Questions? Call Us Toll Free: (012) 123-456-7890</p>
+			<div id="icons">
+				<span id="google-icon" class="fa fa-google fa-1x"  aria-hidden="true"></span> &nbsp;
+				<span id="pintr-icon" class="fa fa-pinterest fa-1x"  aria-hidden="true"></span>&nbsp;
+				<span id="twitter-icon" class="fa fa-twitter-square fa-1x"  aria-hidden="true"></span>&nbsp;
+				<span id="fb-icon" class="fa fa-facebook fa-1x"  aria-hidden="true"></span>&nbsp;
+				<span id="instgr-icon "class="fa fa-instagram fa-1x"  aria-hidden="true"></span></div>
+		</footer>
+		</div>
+	
+	
+</body>
+</html>
